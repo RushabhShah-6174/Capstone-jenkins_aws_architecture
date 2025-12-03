@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "ap-south-1" # Replace with your desired region
+  region = "us-east-1" # Replace with your desired region
 }
 
 # Create S3 bucket

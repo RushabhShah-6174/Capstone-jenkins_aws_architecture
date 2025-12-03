@@ -5,15 +5,15 @@
 #---------------------------------------------#
 
 provider "aws" {
-  region = "ap-south-1"
+  region = "us-east-1"
 }
 
 variable "default_vpc_id" {
- default = "vpc-01cb1bc7e3d81f545"
+ default = "vpc-07b7d4d9fcb30fce9"
 }
 
 variable "default_subnet_id" {
- default = ["subnet-0213e27a9c4333d5c", "subnet-0aa98230ab963bdc8","subnet-03042d2319cd3310c"]
+ default = ["subnet-0fec1c333f1102177", "subnet-0627134b377a726cc", "subnet-04fd4db7826f66c33", "subnet-06cb25bce70542cb3", "subnet-080a9fbfbff7ac240", "subnet-061cd375781c4ae05"]
 }
 
 resource "aws_efs_file_system" "wezvatech" {

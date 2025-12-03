@@ -4,12 +4,12 @@
 # Call/Whatsapp: +91-9739110917
 #---------------------------------------------#
 provider "aws" {
-  region = "ap-south-1"
+  region = "us-east-1"
 }
 
 module "elb" {
   source = "./loadbalancer"
-  vpc_id = "vpc-01cb1bc7e3d81f545"
+  vpc_id = "vpc-07b7d4d9fcb30fce9"
   internal        = false
 
   sg_public_ingress = [
@@ -22,7 +22,7 @@ module "elb" {
 
   sg_public_egress  =  [443,8080]
 
-  subnets         = ["subnet-0213e27a9c4333d5c", "subnet-0aa98230ab963bdc8","subnet-03042d2319cd3310c"]
+  subnets         = ["subnet-0fec1c333f1102177", "subnet-0627134b377a726cc", "subnet-04fd4db7826f66c33", "subnet-06cb25bce70542cb3", "subnet-080a9fbfbff7ac240", "subnet-061cd375781c4ae05"]
 
   listener = [
     {
